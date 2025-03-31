@@ -1,0 +1,422 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PGG x COMPUTEX</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/main.css"  rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<script>
+/*--countdown--*/
+(function () {
+  const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+
+  //I'm adding this section so I don't have to keep updating this pen every year :-)
+  //remove this if you don't need it
+  let today = new Date(),
+      dd = 20,
+      mm = 5,
+      yyyy = 2025,
+      dayMonth = "05/20/",
+      birthday = dayMonth + yyyy;
+  
+  today = mm + "/" + dd + "/" + yyyy;
+  //end
+  
+  const countDown = new Date(birthday).getTime(),
+      x = setInterval(function() {    
+
+        const now = new Date().getTime(),
+              distance = countDown - now;
+
+        document.getElementById("days").innerText = Math.floor(distance / (day)),
+          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+        //do something later when date is reached
+        if (distance < 0) {
+          document.getElementById("headline").innerText = "It's my birthday!";
+          document.getElementById("countdown").style.display = "none";
+          document.getElementById("content").style.display = "block";
+          clearInterval(x);
+        }
+        //seconds
+      }, 0)
+  }());
+</script>
+</head>
+
+<body>
+<div class="wrapper-hero">
+	<div class="hero-banner">
+		<video autoplay muted loop id="hero-video">
+			<source src="../html/images/computex_video_bg.mp4" type="video/mp4">
+		  </video>
+		<div class="wrapper-main">
+			<div class="hero-content">
+				<h1 class="pgg-logo">Pro Gamers Group</h1>
+				<div class="computex-logo mt-10 mb-3">Computex Taipei</div>
+				<div class="hero-date mb-3">20-23, May 2025</div>
+				<div id="countdown">
+					<ul>
+					<li><span id="days"></span>days</li>
+					<li><span id="hours"></span>Hours</li>
+					<li><span id="minutes"></span>Minutes</li>
+					<li><span id="seconds"></span>Seconds</li>
+					</ul>
+				</div>
+				</div>
+		</div>
+		<div class="wrapper-pgg">
+				<!--<div class="wrapper">
+				  <h1 class="glitch" data-text="
+				  PRO GAMERS GROUP">PRO GAMERS GROUP</h1>	  
+				</div>-->
+				<img src="../html/images/PGG Background.png">
+		</div>
+	</div>
+</div>
+<div class="brand-logo">
+	<div class="marquee ">
+		<div>
+			<a href=""><img src="../html/images/pgg_computex_brandlogo_egg.png"></a>
+			<a href=""><img src="../html/images/pgg_computex_brandlogo_noblechairs.png"></a>
+			<a href=""><img src="../html/images/pgg_computex_brandlogo_ducky.png"></a>
+			<a href=""><img src="../html/images/pgg_computex_brandlogo_nitro.png"></a>
+			<a href=""><img src="../html/images/pgg_computex_brandlogo_kolink.png"></a>
+			<a href=""><img src="../html/images/pgg_computex_brandlogo_aerocool.png"></a>
+			<a href=""><img src="../html/images/pgg_computex_brandlogo_HAVN.png"></a>
+			<a href=""><img src="../html/images/pgg_computex_brandlogo_apnx.png"></a>
+			<a href=""><img src="../html/images/pgg_computex_brandlogo_tx3.png"></a>
+			<a href=""><img src="../html/images/pgg_computex_brandlogo_streamplify.png"></a>
+			<a href=""><img src="../html/images/pgg_computex_brandlogo_egg.png"></a>
+			<a href=""><img src="../html/images/pgg_computex_brandlogo_noblechairs.png"></a>
+			<a href=""><img src="../html/images/pgg_computex_brandlogo_ducky.png"></a>
+			<a href=""><img src="../html/images/pgg_computex_brandlogo_nitro.png"></a>
+			<a href=""><img src="../html/images/pgg_computex_brandlogo_kolink.png"></a>
+			<a href=""><img src="../html/images/pgg_computex_brandlogo_aerocool.png"></a>
+			<a href=""><img src="../html/images/pgg_computex_brandlogo_HAVN.png"></a>
+			<a href=""><img src="../html/images/pgg_computex_brandlogo_apnx.png"></a>
+			<a href=""><img src="../html/images/pgg_computex_brandlogo_tx3.png"></a>
+			<a href=""><img src="../html/images/pgg_computex_brandlogo_streamplify.png"></a>
+		</div>
+	</div>
+</div>
+<div class="expo-info m-cl p-xl">
+	<h2 class="extra-h2">Visit Us</h2>
+	<p class="mt-2">Experience the latest innovations from Pro Gamers Group member brands and get an exclusive first look at our newest breakthroughs. Join us at our booth to connect, share insights, and explore exciting collaboration opportunities—all while enjoying a refreshing drink.
+	</p>
+	<div class="expo-map-box mt-2">
+		<div class="expo-map">
+			<img src="../html/images/expo_map.png">
+		</div>
+		<div class="expo-map-info ml-2">
+			<span class="font-w">Nangang Exhibition Center</span>
+			<span>Hall 2  Floor 4   Booth No : R0514</span>
+		</div>
+	</div>
+</div>
+<div class="pgg-intro">
+	<div class="pgg-intro-bg">
+		<div class="intro-wrapper">
+			<div class="intro-content">
+				<h2 class="color-w">About Pro Gamers Group</h2>
+				<p class="color-w mt-1">At Pro Gamers Group (PGG), we connect gaming brands with players worldwide. As a leading force in gaming hardware retail and distribution, we provide brands with direct access to the gaming community, ensuring products reach the right audience through our extensive network of online stores, marketplaces, and retail partners.
+					We don’t just sell gaming products—we help shape the industry. Through our Retail Media Solutions, we offer strategic marketing opportunities backed by real-time sales data, allowing brands to grow their presence and engage with gamers effectively.
+				</p>
+				<a class="btn w-btn mt-2" href="#">Visit PGG</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="featured-products inner-wrapper mt-10">
+	<div class="section-title">
+		<span class="slash"></span>
+		<h2>Featured Products</h2>
+	</div>
+	<div class="product-wrapper mt-2">
+		<!---HAVN--->
+		<div class="product-item">
+			<div class="product-img-wrapper">
+				<div class="brand-logo-s"><img src="../html/images/pgg_computex_brandlogo_HAVN_s.png"></div>
+				<div class="product-img"><img src="../html/images/havn-BF360.jpg"></div>
+			</div>
+			<div class="product-intro mt-2">
+				<div class="model-name align-center">
+					<h3>BF360</h3>
+					<a class="btn" href="https://swiy.co/havn-global-site" target="_blank">Explore Brand</a>
+				</div>
+				<div class="model-detail ml-2">
+					<ul>
+						<li><span>Timeless Design:</span> A striking mid-tower, available in Black or White, with or without fans. </li>
+						<li><span>Optimized Cooling:</span> Can host up to 4×180mm fans and a smart fan HUB to boost CPU/GPU airflow. </li>
+						<li><span>Easy Assembly:</span> Features a semi-open chassis and detachable top fan bracket for effortless build. </li>
+						<li><span>Cable Management:</span> Boasts SimpliCable Routing with vibration-dampened mounts for neatness. </li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+		<!---Ducky--->
+		<div class="product-item">
+			<div class="product-img-wrapper">
+				<div class="brand-logo-s brand-logo-dark"><img src="../html/images/pgg_computex_brandlogo_ducky_s.png"></div>
+				<div class="product-img"><img src="../html/images/ducky-Cushion98.jpg"></div>
+			</div>
+			<div class="product-intro mt-2">
+				<div class="model-name align-center">
+					<h3>Cushion 98</h3>
+					<a class="btn" href="https://swiy.co/ducky-global-site" target="_blank">Explore Brand</a>
+				</div>
+				<div class="model-detail ml-2">
+					<ul>
+						<li><span>Cushioned Typing:</span> Unique cushioned deisgn, suspended & dampened typing.</li>
+						<li><span>Easy Tinkering:</span> Quick-latch design with switchable cushioning layers.</li>
+						<li><span>Silent Switches:</span> Hot-swappable Ducky Shush switches for quiet performance.</li>
+						<li><span>Advanced Features:</span> Tri-mode connectivity, profiles, Fn layers & VIA support.</li>
+						<li><span>Stylish & Functional:</span> Two-tone PBT keycaps withSouth-facing RGB.</li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+		<!---APNX--->
+		<div class="product-item">
+			<div class="product-img-wrapper">
+				<div class="brand-logo-s brand-logo-dark"><img src="../html/images/pgg_computex_brandlogo_apnx_s.png"></div>
+				<div class="product-img"><img src="../html/images/apnx-V2.jpg"></div>
+			</div>
+			<div class="product-intro mt-2">
+				<div class="model-name align-center">
+					<h3>V2</h3>
+					<a class="btn" href="https://swiy.co/apnx-site" target="_blank">Explore Brand</a>
+				</div>
+				<div class="model-detail ml-2">
+					<ul>
+						<li><span>Optimized Airflow:</span> Innovative X-pand Flow Design for superior cooling.</li>
+						<li><span>Radiator Support:</span> Fits up to 360mm radiators with multiple mounting options.</li>
+						<li><span>Extreme Cooling:</span> Supports up to 13 fans for maximum ventilation.</li>
+						<li><span>Crystal-Clear View:</span> Three removable tempered glass panels.</li>
+						<li><span>Easy Maintenance:</span> Removable bottom filter and detachable fan cover.</li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+		<!---Aerocool--->
+		<div class="product-item">
+			<div class="product-img-wrapper">
+				<div class="brand-logo-s brand-logo-dark"><img src="../html/images/pgg_computex_brandlogo_aerocool_s.png"></div>
+				<div class="product-img"><img src="../html/images/aerocool-PREMIER_G1.jpg"></div>
+			</div>
+			<div class="product-intro mt-2">
+				<div class="model-name align-center">
+					<h3>BF360</h3>
+					<a class="btn" href="https://swiy.co/aerocool-site" target="_blank">Explore Brand</a>
+				</div>
+				<div class="model-detail ml-2">
+					<ul>
+						<li><span>Next-Gen Ready:</span> ATX 3.1 with high-powered 12V-2x6 connectors</li>
+						<li><span>High Efficiency:</span> 80Plus Gold & Cybenetics Platinum certified</li>
+						<li><span>Premium Components:</span> 100% premium 105°C capacitors</li>
+						<li><span>Silent Cooling:</span> 135mm FDB fan with Zero RPM Mode</li>
+						<li><span>Cable Management:</span> Fully modular design with flat cables</li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+		<!---noblechairs--->
+		<div class="product-item">
+			<div class="product-img-wrapper">
+				<div class="brand-logo-s brand-logo-dark"><img src="../html/images/pgg_computex_brandlogo_noblechairs_s.png"></div>
+				<div class="product-img"><img src="../html/images/noblechairs_DAWN.jpg"></div>
+			</div>
+			<div class="product-intro mt-2">
+				<div class="model-name align-center">
+					<h3>DAWN</h3>
+					<a class="btn" href="https://swiy.co/noblechairs-site" target="_blank">Explore Brand</a>
+				</div>
+				<div class="model-detail ml-2">
+					<ul>
+						<li><span>Durable & Ergonomic:</span> A glass-fiber frame with cold foam that delivers unrivaled, long-lasting comfort. </li>
+						<li><span>Balanced Recline:</span> An innovative synchro-mechanism ensuring ultra-smooth, pressure-free support. </li>
+						<li><span>Foldable Armrests:</span> Seamlessly transform your setup for work, gaming, or lounging ease. </li>
+						<li><span>Three Finishes:</span> Pick from luxe faux leather, airy fabric, or hybrid PU/Vinyl for your style. </li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+		<!---ThunderX3--->
+		<div class="product-item">
+			<div class="product-img-wrapper">
+				<div class="brand-logo-s brand-logo-dark"><img src="../html/images/pgg_computex_brandlogo_tx3_s.png"></div>
+				<div class="product-img"><img src="../html/images/tx3-FlexPro.jpg"></div>
+			</div>
+			<div class="product-intro mt-2">
+				<div class="model-name align-center">
+					<h3>FLEX Pro</h3>
+					<a class="btn" href="https://swiy.co/thunderx3-site" target="_blank">Explore Brand</a>
+				</div>
+				<div class="model-detail ml-2">
+					<ul>
+						<li><span>Adaptive Support:</span> Self-adjusting headrest, backrest & lumbar.</li>
+						<li><span>Ultimate Flexibility:</span> 5D x 360° armrests for total control.</li>
+						<li><span>Ergonomic Movement:</span> SYNC6 mechanism with synchronous tilt.</li>
+						<li><span>Forward Tilt:</span> Customizable seat adjustability.</li>
+						<li><span>Full Customization:</span> 19 dimensions of adjustability.</li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+		<!---EGG--->
+		<div class="product-item">
+			<div class="product-img-wrapper">
+				<div class="brand-logo-s brand-logo-dark"><img src="../html/images/pgg_computex_brandlogo_egg_s.png"></div>
+				<div class="product-img"><img src="../html/images/egg_OP1-8k-v2.jpg"></div>
+			</div>
+			<div class="product-intro mt-2">
+				<div class="model-name align-center">
+					<h3>OP1 8k v2</h3>
+					<a class="btn" href="https://swiy.co/endgamegear-site" target="_blank">Explore Brand</a>
+				</div>
+				<div class="model-detail ml-2">
+					<ul>
+						<li><span>8K Polling & GX Speed Mode:</span> Ultra-responsive performance with zero-delay clicks (TechPowerUp verified). </li>
+						<li><span>No Power Saving:</span> Always at peak performance with no throttling or input lag. </li>
+						<li><span>Featherlight & Flexible:</span> Just ~49g with a drag-free Flex Cord for a near-wireless feel. </li>
+						<li><span>Custom Sensor & Switches:</span> PixArt PAW3950 with fine-tuned CPI/LoD settings and swappable main switches. </li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+		<!---streamplify--->
+		<div class="product-item">
+			<div class="product-img-wrapper">
+				<div class="brand-logo-s brand-logo-dark"><img src="../html/images/pgg_computex_brandlogo_streamplify_s.png"></div>
+				<div class="product-img"><img src="../html/images/streamplify_Cam-Plus.jpg"></div>
+			</div>
+			<div class="product-intro mt-2">
+				<div class="model-name align-center">
+					<h3>CAM PLUS</h3>
+					<a class="btn" href="https://swiy.co/streamplify-site" target="_blank">Explore Brand</a>
+				</div>
+				<div class="model-detail ml-2">
+					<ul>
+						<li><span>Crisp Video:</span> FHD 1080P at 60fps with 2.0MP sensor </li>
+						<li><span>Adjustable Lighting:</span> Three color temperatures & brightness control </li>
+						<li><span>Flexible Positioning:</span> 45° vertical tilt & 360° swivel </li>
+						<li><span>Privacy Protection:</span> Rotating shutter cover with mute function </li>
+						<li><span>Sharp Focus:</span> Autofocus for clear HD video in any setting </li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+		<!---Nitro--->
+		<div class="product-item">
+			<div class="product-img-wrapper">
+				<div class="brand-logo-s brand-logo-dark"><img src="../html/images/pgg_computex_brandlogo_nitro_s.png"></div>
+				<div class="product-img"><img src="../html/images/nitro_IMMERSION-Line.jpg"></div>
+			</div>
+			<div class="product-intro mt-2">
+				<div class="model-name align-center">
+					<h3>IMMERSION Line</h3>
+					<a class="btn" href="https://swiy.co/nitro-concepts-site" target="_blank">Explore Brand</a>
+				</div>
+				<div class="model-detail ml-2">
+					<ul>
+						<li><span>LED Box & Strips:</span> Dive into customizable ARGB magic that pulses in tune with your game telemetry. </li>
+						<li><span>Wind Box:</span> Feel the rush as Wind Flow Fans blast focused air, mimicking real speed and cutting VR nausea. </li>
+						<li><span>Tactile Feedback:</span> Experience full-body haptic thrills that amplify every bump and curve.</li>
+						<li><span>Seamless Integration:</span> Enjoy effortless plug-and-play setup with top sim racing software for full immersion. </li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+		<!---EGG--->
+		<div class="product-item">
+			<div class="product-img-wrapper">
+				<div class="brand-logo-s brand-logo-dark"><img src="../html/images/pgg_computex_brandlogo_kolink_s.png"></div>
+				<div class="product-img"><img src="../html/images/kolink_TG-1.jpg"></div>
+			</div>
+			<div class="product-intro mt-2">
+				<div class="model-name align-center">
+					<h3>TG-1 Thermal Paste</h3>
+					<a class="btn" href="https://swiy.co/endgamegear-site" target="_blank">Explore Brand</a>
+				</div>
+				<div class="model-detail ml-2">
+					<ul>
+						<li><span>Superior Cooling:</span> Delivers 12.8 W/m*K of thermal power to keep performance at its peak. </li>
+						<li><span>Safe & Reliable:</span> Formulated as electrically non-conductive, protecting your system from shorts. </li>
+						<li><span>Extreme Durability:</span> Operates flawlessly from -50°C to 250°C for lasting stability. </li>
+						<li><span>Easy Application:</span> Enjoy a flawless spread with the handy spatula and cleaning wipe included. </li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="connect-form mt-4">
+	<div class="section-title">
+		<span class="slash"></span>
+		<h2>Let’s Connect</h2>
+		<p class="dis-p mt-1">Interested in getting in touch? Sign up, and our team will reach out to discuss opportunities with you. We look forward to connecting!</p>
+	</div>
+	<div class="connect-form-cl mt-2 p-m"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf58Lhx6MvL6FbXePEHkrYVsYzxyW1pnxGP0QHsRP7IziEBBg/viewform?embedded=true" width="640" height="700" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe></div>
+</div>
+<div class="giveaway-form">
+	<div class="section-title">
+		<span class="slash"></span>
+		<h2>Community Giveaway</h2>
+		<p class="dis-p mt-1">Interested in getting in touch? Sign up, and our team will reach out to discuss opportunities with you. We look forward to connecting!</p>
+	</div>
+	<div class="p-m"><a class="e-widget no-button" href="https://gleam.io/UV1TX/computex-community-gear-drop" rel="nofollow">
+		COMPUTEX Community Gear Drop
+	  </a>
+	  <script type="text/javascript" src="https://widget.gleamjs.io/e.js" async="true"></script>
+	  </div>
+</div>
+<div class="event">
+	<div class="section-title">
+		<span class="slash slash-w"></span>
+		<h2 class="color-w">Event Highlights</h2>
+		<p class="dis-p mt-1 color-w">Get the latest news, product reveals, and media coverage from our booth. Stay tuned for exclusive updates and insights!</p>
+	</div>
+	<div class="inner-wrapper">
+		<div class="product-wrapper mt-2">
+			<div class="video-box">
+				<iframe width="100%" height="315" src="https://www.youtube.com/embed/fpy_zoEoxfo?si=XYcueDuP32PNRgH9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
+			<div class="video-box">
+				<iframe width="100%" height="315" src="https://www.youtube.com/embed/fpy_zoEoxfo?si=XYcueDuP32PNRgH9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
+			<div class="video-box">
+				<iframe width="100%" height="315" src="https://www.youtube.com/embed/fpy_zoEoxfo?si=XYcueDuP32PNRgH9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
+			<div class="video-box">
+				<iframe width="100%" height="315" src="https://www.youtube.com/embed/fpy_zoEoxfo?si=XYcueDuP32PNRgH9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
+		</div>
+		<div class="media-link">
+			<a href="#" target="_blank">HAVN is a new premium case brand and company's first case is impressive</a>
+			<a href="#" target="_blank">HAVN is a new premium case brand and company's first case is impressive</a>
+			<a href="#" target="_blank">HAVN is a new premium case brand and company's first case is impressive</a>
+			<a href="#" target="_blank">HAVN is a new premium case brand and company's first case is impressive</a>
+			<a href="#" target="_blank">HAVN is a new premium case brand and company's first case is impressive</a>
+		</div>	
+	</div>
+</div>
+<div class="footer">© Pro Gamers Group 2025</div>
+</body>
+</html>

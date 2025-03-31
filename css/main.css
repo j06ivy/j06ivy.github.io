@@ -1,0 +1,789 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syne:wght@400..800&display=swap');
+
+/* CSS Document */
+
+body{
+	width: 100%;
+	overflow-x: hidden;
+	font-family: "Inter",sans-serif;
+}
+.wrapper-hero{
+	width: 100vw;
+	height: 80vh;
+	min-height: 768px;
+}
+.hero-banner{
+	background-image: url("../images/computex-E-invite-bg.webp");
+	background-size: cover;
+	height: 100%;
+	min-height: 768px;
+	background-position: center;
+	overflow: hidden;
+}
+#hero-video{
+	display: none;
+}
+.wrapper-main{
+	width: 40%;
+	height: 100%;
+	float: left;
+	background: rgb(19,59,84);
+	background: linear-gradient(90deg, rgba(19,59,84,1) 0%, rgba(19,59,84,0.9302672485009629) 32%, rgba(19,59,84,0) 100%);
+}
+.hero-content{
+	width: 500px;
+	margin: 0 auto;
+	padding: 40px 20px;
+}
+.pgg-logo{
+	width:114px;
+	height: 90px;
+	background-image:url(../images/PGG_logo.svg);
+	text-indent: -9999px;
+}
+.computex-logo{
+	width: 270px;
+	height: 58px;
+	background-image: url(../images/Computex_logo.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+	margin: 1rem;
+}
+.hero-date{
+	font-family: "Kanit", sans-serif;
+	font-size: 2.7rem;
+	font-weight: 700;
+	color:#EF5A22 ;
+}
+.wrapper-pgg{
+	width: 60%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	display: flex;
+	justify-content: center;  /* 水平置中 */
+	align-items: center;     /* 垂直置中 */
+	height: 100%;       /* 设置父容器高度 */
+}
+.wrapper-pgg img{
+	padding: 2%;
+}
+.m-cl{
+	width: 40vw;
+	margin: 0 auto;
+}
+h2{
+	color: #29334F;
+	font-family:"Kanit", sans-serif;
+	font-size: 3rem;
+	font-weight: 800;
+	font-style: italic;
+}
+p{
+	color: #29334F;
+	font-family:"sync", sans-serif;
+	font-size: 1rem;
+	line-height: 1.5;
+	font-weight: 500;
+}
+.extra-h2{
+	color: #EF5A22;
+	font-size: 4rem;
+}
+.expo-map-box{
+	display: flex;
+}
+.expo-map{
+	width: 20%;
+}
+.expo-map img{
+	width: 100%;
+}
+.expo-map-info{
+	color:#EF5A22;
+	font-family:"sync", sans-serif;
+	font-size: 1.5rem;
+	line-height: 1.5;
+	font-weight: 500;
+}
+.font-w{
+	font-weight: 600;
+}
+.expo-map-info span{
+	display: block;
+}
+/*--marquee --*/
+.marquee {
+	height: 40px;
+	width: 100%;
+	margin: 2rem 0;
+	overflow: hidden;
+	position: relative;
+  }
+  
+  .marquee div {
+	display: block;
+	width: 200%;
+	height: 40px;
+	position: absolute;
+	overflow: hidden;
+	animation: marquee 20s linear infinite;
+} 
+.marquee a{
+	display: block;
+	float: left;
+	width: 130px;
+	height: 40px;
+	margin:0 2rem;
+  }
+.marquee a img{
+	width: 100%;
+	height: auto;
+}
+.pgg-intro{
+	height: 55vh;
+	min-height: 768px;
+}
+.pgg-intro-bg{
+	background-image: url(../images/pgg_intro_bg.jpg);
+	background-size: cover;
+	height: 100%;
+}
+.intro-wrapper{
+	width: 40%;
+	float: right;
+	position: relative;
+	height: 100%;
+}
+
+.intro-content{
+	position: absolute;
+	width: 100%;
+	bottom: -3rem;
+	left: -5rem;
+	padding: 0 10rem;
+	background-color:rgba(41, 51, 79, 0.8);
+	padding: 3rem;
+	color: #fff;
+	box-shadow:1rem 1.5rem #EF5A22;
+	backdrop-filter: blur(5px);
+}
+.btn{
+	font-size: 1.2rem;
+	padding: 0.5rem 1.5rem;
+	background-color: #fff;
+	transition: background-color 300ms linear;
+	color: #29334F;
+	display: inline-block;
+}
+.btn:hover{
+	background-color: #EF5A22;
+	-webkit-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+	color: #fff;
+}
+.inner-wrapper{
+	width: 1460px;
+	margin: 0 auto;
+	padding: 0 2rem;
+}
+.product-wrapper{
+	display: flex;
+	flex-wrap: wrap; 
+	width: 100%;
+}
+.product-item{
+	width: 50%;
+	padding: 3rem;
+}
+
+.section-title{
+	width: 100%;
+	text-align: center;
+}
+.section-title .slash{
+	display: block;
+	margin: 2rem auto;
+	width: 27px;
+	height: 37px;
+	background-image: url(../images/slash.png);
+}
+.section-title .slash-w{
+	background-image: url(../images/slash-w.png);
+}
+/*--feature product--*/
+.product-img-wrapper{
+	position: relative;
+}
+.brand-logo-s{
+	position: absolute;
+	background-color: rgba(200, 200, 200,0.7);
+	left: -2rem;
+	top: 2rem;
+	width: 100px;
+	height: 150px;
+	border-radius: 5px;
+	backdrop-filter: blur(8px);
+}
+.brand-logo-dark{
+	background-color: rgba(80, 80, 80,0.4);
+}
+.brand-logo-s img{
+	width: 100%;
+	height: auto;
+	padding: 40px 10px;
+}
+.product-intro{
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+.model-name{
+	flex: 3;
+}
+.model-detail{
+	flex: 7;
+}
+.model-name h3{
+	color: #29334F;
+	font-family: "Kanit", sans-serif;
+	font-size: 2rem;
+	font-weight: 700;
+	font-style: italic;
+	padding: 10px 0;
+}
+.model-name .btn{
+	border: 1px #29334F solid;
+	display: block;
+	padding: 0.5rem 1rem;
+}
+
+.model-detail li{
+	margin-bottom: 0.5rem;
+	padding-left: 17px;
+	background-image: url("../images/list.png");
+	background-position: 0 4px;
+	background-repeat: no-repeat;
+	line-height: 1.4;
+	color:#29334F;
+}
+.model-detail span{
+	font-weight: 600;
+}
+.connect-form{
+	margin: 0 auto;
+	padding-top: 4rem;
+	background-color: #f3f5f6;
+}
+.connect-form-cl{
+	width: 640px;
+	margin: 30px auto;
+}
+.connect-form-cl iframe{
+	width:640px;
+}
+.giveaway-form{
+	margin: 0 auto;
+	padding-top: 4rem;
+	background-image: url("../images/pgg_bg.jpg");
+	background-size: cover;
+	background-position: center;
+}
+.event{
+	margin: 0 auto;
+	background-color: #29334F;
+
+	padding-top: 4rem;
+}
+.video-box{
+	width: 50%;
+	padding: 2rem;
+}
+.media-link{
+	padding: 2rem 2rem 4rem 2rem;
+}
+.media-link a{
+	display: block;
+	width: 100%;
+	background-image: url(../images/list.png);
+	background-repeat: no-repeat;
+	background-position: 0 20px;
+	padding-left: 20px;
+	line-height: 50px;
+	font-size: 1.2rem;
+	border-bottom: 1px #fff solid;
+	color: #ffffff;
+}
+.footer{
+	background-color: #EF5A22;
+	width: 100%;
+	padding-left: 10vw;
+	color: #fff;
+	line-height: 35px;
+	font-size: 1rem;
+}
+.media-link a:hover{
+	color: #E3E3E3;
+}
+/*--spacing--*/
+.mt-10{
+	margin-top: 10rem;
+}
+.mt-8{
+	margin-top: 8rem;
+}
+.mt-4{
+	margin-top: 4rem;
+}
+.mt-2{
+	margin-top: 2rem;
+}
+.mt-1{
+	margin-top: 1rem;
+}
+.mb-3{
+	margin-bottom: 3rem;
+}
+.mb-10{
+	margin-bottom: 10rem;
+}
+.ml-2{
+	margin-left: 2rem;
+}
+.p-xl{
+	padding: 10rem 0;
+}
+.p-m{
+	padding: 4rem 0;
+}
+.color-w{
+	color: #fff;
+}
+.align-center{
+	text-align: center;
+}
+
+
+
+
+/*--countdown--*/
+
+  .container {
+	color: #fff;
+	margin: 0 auto;
+	text-align: center;
+  }
+  
+  #countdown li {
+	display: inline-block;
+	font-size: 0.8em;
+	list-style-type: none;
+	padding: 1em;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+	font-family:"Kanit", sans-serif;
+  }
+  
+  #countdown li span {
+	display: block;
+	font-size: 4rem;
+	
+  }
+  
+  .emoji {
+	display: none;
+	padding: 1rem;
+  }
+  
+  .emoji span {
+	font-size: 3rem;
+	padding: 0.5rem;
+  }
+
+
+
+  
+  @keyframes marquee {
+	0% { left: 0; }
+	100% { left: -100%; }
+  }
+  @media all and (max-width: 768px) {
+	h1 {
+	  font-size: calc(1.5rem * var(--smaller));
+	}
+	
+	li {
+	  font-size: calc(1.125rem * var(--smaller));
+	}
+	
+	li span {
+	  font-size: calc(3.375rem * var(--smaller));
+	}
+  }
+@media only screen and (max-width: 1070px) {
+	
+}
+@media only screen and (max-width:720px){
+	
+} 
+
+/*--RWD--*/
+@media screen and (max-width: 1200px) {
+	.wrapper-hero,.hero-banner{
+		height: 70vh;
+		min-height: 500px;
+	}
+	.hero-content{
+		padding: 40px;
+	}
+	#countdown li span{
+		font-size: 3rem;
+	}
+	.computex-logo{
+		margin-top: 5rem;
+	}
+	.expo-info{
+		padding: 6rem 0;
+		width: 50%;
+	}
+	.intro-wrapper{
+		width: 60%;
+	}
+	.inner-wrapper{
+		width: 100%;
+	}
+	.model-name h3{
+		font-size: 1.5rem;
+	}
+	.model-name .btn{
+		font-size: 1rem;
+		padding: 0.6rem 0.1rem;
+	}
+	.product-item{
+		padding: 2rem;
+	}
+}
+  
+  @media screen and (max-width: 979px) {
+	.wrapper-hero,.hero-banner{
+		min-height: 400px;
+		height: 55vh;
+	}
+	.hero-content{
+		width: 100%;
+		padding: 20px;
+	}
+	.hero-date{
+		font-size: 2.2rem;
+	}
+	.wrapper-main{
+		width: 45%;
+	}
+	.wrapper-pgg{
+		width: 55%;
+	}
+	#countdown li{
+		padding: 0.5rem;
+	}
+	#countdown li span{
+		font-size: 3rem;
+	}
+	.expo-info{
+		width: 80%;
+	}
+	.intro-wrapper{
+		width: 80%;
+	}
+	.product-intro{
+		display: initial;
+		margin-top: 2rem;
+	}
+	.model-name{
+		margin-top: 1.5rem;
+	}
+	.model-name .btn{
+		margin: 0 auto 2rem auto;
+		width: 80%;
+		font-size: 1.2rem;
+	}
+	.brand-logo-s{
+		height: 100px;
+		width: 80px;
+	}
+	.brand-logo-s img{
+		padding: 20px 10px;
+	}
+	.dis-p{
+		width: 70%;
+		margin: 1rem auto;
+	}
+  }
+  
+  @media screen and (max-width: 767px){
+	.product-item{
+		width: 100%;
+	}
+	.connect-form-cl{
+		width: 100%;
+		padding:2rem;
+	}
+	.connect-form-cl iframe{
+		width: 100%;
+	}
+	.hero-banner{
+		background-image: none;
+		position: relative;
+	}
+	#hero-video{
+		display: block;
+		display: block;
+        position: absolute;
+        z-index: -1;
+		width: 100%;
+	}
+	.hero-content{
+		padding: 40px;
+	}
+	.wrapper-main{
+		width: 100%;
+	}
+	.pgg-logo{
+		display: inline-block;
+	}
+	.computex-logo{
+		margin: 3rem auto 3rem auto;
+	}
+	.hero-date{
+		margin-top: 5vh;
+		margin-bottom: 2rem;
+		text-align: center;
+	}
+	#countdown{
+		text-align: center;
+	}
+	#countdown li span{
+		font-size: 3.5rem;
+	}
+	.wrapper-hero, .hero-banner{
+		height: 65vh;
+	}
+	.marquee a{
+		margin:0 0.5rem
+	}
+	.wrapper-main{
+		background: rgb(19,59,84);
+background: linear-gradient(180deg, rgba(19,59,84,1) 0%, rgba(19,59,84,0.8490822842808998) 13%, rgba(19,59,84,0) 100%);
+	}
+	.pgg-logo{
+		display: inline-block;
+        width: 100px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+	}
+	.expo-info{
+		width: 100%;
+		padding: 6rem 2rem;
+	}
+	.expo-map-info{
+		font-size: 1rem;
+	}
+	.intro-content{
+		left:-2rem;
+		padding: 2rem;
+	}
+  }
+  
+  @media screen and (max-device-width: 480px) {
+	/* 如果使用者之裝置寬度 <= 480px，將會再載入這裡的 CSS。*/
+  }
+  @media screen and (orientation: portrait) {
+	
+  }
+/*-- Hero effect--*/
+  
+  .wrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  .wrapper h1.glitch {
+	fill:none;
+	stroke:white;
+	stroke-width:.5px;
+	stroke-linejoin:round;
+	font-family: sans-serif;
+	font-weight: 800;
+	position: relative;
+	font-size: 200px;
+	padding: 30px;
+  }
+  .wrapper h1.glitch::before, .wrapper h1.glitch::after {
+	padding: 30px;
+	fill:none;
+	stroke:white;
+	stroke-width:.5px;
+	stroke-linejoin:round;
+	content: "PRO";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	top: 0;
+  }
+  .wrapper h1.glitch::before {
+	left: 3px;
+	text-shadow: -2px 0 red;
+	animation-name: glitch-animation-1;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-direction: reverse-alternate;
+  }
+  .wrapper h1.glitch::after {
+	left: -3px;
+	text-shadow: -2px 0 blue;
+	animation-name: glitch-animation-2;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-direction: reverse-alternate;
+  }
+  
+  @keyframes glitch-animation-1 {
+	0% {
+	  clip: rect(16px, 900px, 243px, 30px);
+	}
+	5% {
+	  clip: rect(102px, 900px, 253px, 30px);
+	}
+	10% {
+	  clip: rect(65px, 900px, 215px, 30px);
+	}
+	15% {
+	  clip: rect(21px, 900px, 124px, 30px);
+	}
+	20% {
+	  clip: rect(115px, 900px, 244px, 30px);
+	}
+	25% {
+	  clip: rect(19px, 900px, 270px, 30px);
+	}
+	30% {
+	  clip: rect(228px, 900px, 188px, 30px);
+	}
+	35% {
+	  clip: rect(34px, 900px, 223px, 30px);
+	}
+	40% {
+	  clip: rect(257px, 900px, 200px, 30px);
+	}
+	45% {
+	  clip: rect(116px, 900px, 223px, 30px);
+	}
+	50% {
+	  clip: rect(297px, 900px, 16px, 30px);
+	}
+	55% {
+	  clip: rect(80px, 900px, 97px, 30px);
+	}
+	60% {
+	  clip: rect(120px, 900px, 146px, 30px);
+	}
+	65% {
+	  clip: rect(201px, 900px, 276px, 30px);
+	}
+	70% {
+	  clip: rect(128px, 900px, 184px, 30px);
+	}
+	75% {
+	  clip: rect(23px, 900px, 176px, 30px);
+	}
+	80% {
+	  clip: rect(150px, 900px, 283px, 30px);
+	}
+	85% {
+	  clip: rect(236px, 900px, 236px, 30px);
+	}
+	90% {
+	  clip: rect(165px, 900px, 271px, 30px);
+	}
+	95% {
+	  clip: rect(80px, 900px, 170px, 30px);
+	}
+	100% {
+	  clip: rect(226px, 900px, 43px, 30px);
+	}
+  }
+  @keyframes glitch-animation-2 {
+	0% {
+	  clip: rect(17px, 900px, 180px, 30px);
+	}
+	5% {
+	  clip: rect(69px, 900px, 22px, 30px);
+	}
+	10% {
+	  clip: rect(108px, 900px, 267px, 30px);
+	}
+	15% {
+	  clip: rect(285px, 900px, 222px, 30px);
+	}
+	20% {
+	  clip: rect(197px, 900px, 139px, 30px);
+	}
+	25% {
+	  clip: rect(156px, 900px, 125px, 30px);
+	}
+	30% {
+	  clip: rect(251px, 900px, 88px, 30px);
+	}
+	35% {
+	  clip: rect(23px, 900px, 21px, 30px);
+	}
+	40% {
+	  clip: rect(135px, 900px, 214px, 30px);
+	}
+	45% {
+	  clip: rect(119px, 900px, 225px, 30px);
+	}
+	50% {
+	  clip: rect(250px, 900px, 35px, 30px);
+	}
+	55% {
+	  clip: rect(56px, 900px, 83px, 30px);
+	}
+	60% {
+	  clip: rect(39px, 900px, 78px, 30px);
+	}
+	65% {
+	  clip: rect(260px, 900px, 185px, 30px);
+	}
+	70% {
+	  clip: rect(152px, 900px, 15px, 30px);
+	}
+	75% {
+	  clip: rect(174px, 900px, 107px, 30px);
+	}
+	80% {
+	  clip: rect(31px, 900px, 94px, 30px);
+	}
+	85% {
+	  clip: rect(161px, 900px, 282px, 30px);
+	}
+	90% {
+	  clip: rect(283px, 900px, 127px, 30px);
+	}
+	95% {
+	  clip: rect(47px, 900px, 96px, 30px);
+	}
+	100% {
+	  clip: rect(68px, 900px, 208px, 30px);
+	}
+  }
