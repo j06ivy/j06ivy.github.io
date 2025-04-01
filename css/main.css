@@ -329,6 +329,24 @@ p{
 .media-link a:hover{
 	color: #E3E3E3;
 }
+.img-flash{
+	  -webkit-animation: flash linear 1.5s infinite;
+	  animation: flash linear 1.5s infinite;
+  }
+  @-webkit-keyframes flash {
+	  0% { opacity: 1; } 
+	  30% { opacity:.1;}
+	  50% { opacity: 1; }
+	  60% { opacity:.1; }  
+	  100% { opacity: 1; }
+  }
+  @keyframes flash {
+	0% { opacity: 1; } 
+	  30% { opacity: .1; }
+	  50% { opacity: 1; }
+	  60% { opacity: .1; }  
+	  100% { opacity: 1; }
+  }
 /*--spacing--*/
 .mt-10{
 	margin-top: 10rem;
@@ -367,8 +385,16 @@ p{
 	text-align: center;
 }
 
-
-
+/*--TAB--*/
+.tab_css{display:flex;flex-wrap:wrap;justify-content:center;}
+.tab_css input{display:none}
+.tab_css label{margin: 0 10px 10px 0; padding: 10px 16px; cursor: pointer; border-radius: 5px;font-size: 1.5rem;border: 2px #29334F solid; font-weight: 500;font-family: "Kanit", sans-serif;}
+.tab_content{order:1;display: none; width:100%; line-height: 1.6; font-size: .9em; padding: 15px;}
+.tab_css input:checked + label{opacity: 1; background: #29334F; color:#EF5A22; }
+.tab_css label:hover{
+	background-color: #DADCE2;
+}
+.tab_css input:checked + label + .tab_content{display: initial; }
 
 /*--countdown--*/
 
@@ -404,9 +430,6 @@ p{
 	font-size: 3rem;
 	padding: 0.5rem;
   }
-
-
-
   
   @keyframes marquee {
 	0% { left: 0; }
@@ -622,6 +645,10 @@ background: linear-gradient(180deg, rgba(19,59,84,1) 0%, rgba(19,59,84,0.8490822
 	}
 	.dis-p {
         width: 80%;
+	}
+	.tab_css label{
+		font-size: 1rem;
+		padding: 15px 16px;
 	}
   }
   
