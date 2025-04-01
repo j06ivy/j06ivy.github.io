@@ -149,6 +149,7 @@ p{
 .pgg-intro-bg{
 	background-image: url(../images/pgg_intro_bg.jpg);
 	background-size: cover;
+	background-position:top right;
 	height: 100%;
 }
 .intro-wrapper{
@@ -566,10 +567,10 @@ p{
 		text-align: center;
 	}
 	#countdown li span{
-		font-size: 3.5rem;
+		font-size: 3rem;
 	}
 	.wrapper-hero, .hero-banner{
-		height: 65vh;
+		height: 70vh;
 	}
 	.marquee a{
 		margin:0 0.5rem
@@ -594,6 +595,13 @@ background: linear-gradient(180deg, rgba(19,59,84,1) 0%, rgba(19,59,84,0.8490822
 	.intro-content{
 		left:-2rem;
 		padding: 2rem;
+	}
+	.product-wrapper{
+		display: block;
+	}
+	.video-box{
+		width: 100%;
+		padding: 1rem 0;
 	}
   }
   
