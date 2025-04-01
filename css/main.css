@@ -612,6 +612,17 @@ background: linear-gradient(180deg, rgba(19,59,84,1) 0%, rgba(19,59,84,0.8490822
 	.model-detail{
 		margin-left: 0;
 	}
+	.media-link{
+		padding: 0 0 2rem 0;
+	}
+	.media-link a{
+		line-height: 20px;
+    	font-size: 1rem;
+    	padding: 10px 0 10px 20px;
+	}
+	.dis-p {
+        width: 80%;
+	}
   }
   
   @media screen and (max-device-width: 480px) {

@@ -6,17 +6,16 @@
 <title>PGG x COMPUTEX</title>
 <link href="css/reset.css" rel="stylesheet" type="text/css">
 <link href="css/main.css"  rel="stylesheet" type="text/css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 <script>
+
 /*--countdown--*/
 (function () {
   const second = 1000,
         minute = second * 60,
         hour = minute * 60,
         day = hour * 24;
-
-  //I'm adding this section so I don't have to keep updating this pen every year :-)
-  //remove this if you don't need it
   let today = new Date(),
       dd = 20,
       mm = 5,
@@ -58,7 +57,7 @@
 			<source src="/images/computex_video_bg.mp4" type="video/mp4">
 		  </video>
 		<div class="wrapper-main">
-			<div class="hero-content">
+			<div class="hero-content" >
 				<h1 class="pgg-logo">Pro Gamers Group</h1>
 				<div class="computex-logo mt-10 mb-3">Computex Taipei</div>
 				<div class="hero-date mb-3">20-23, May 2025</div>
@@ -72,11 +71,7 @@
 				</div>
 				</div>
 		</div>
-		<div class="wrapper-pgg">
-				<!--<div class="wrapper">
-				  <h1 class="glitch" data-text="
-				  PRO GAMERS GROUP">PRO GAMERS GROUP</h1>	  
-				</div>-->
+		<div class="wrapper-pgg" data-aos="fade-left" data-aos-duration="1500">
 				<img src="../images/PGG Background.png">
 		</div>
 	</div>
@@ -107,7 +102,7 @@
 		</div>
 	</div>
 </div>
-<div class="expo-info m-cl p-xl">
+<div class="expo-info m-cl p-xl" data-aos="fade-up" data-aos-duration="2000">
 	<h2 class="extra-h2">Visit Us</h2>
 	<p class="mt-2">Experience the latest innovations from Pro Gamers Group member brands and get an exclusive first look at our newest breakthroughs. Join us at our booth to connect, share insights, and explore exciting collaboration opportunities—all while enjoying a refreshing drink.
 	</p>
@@ -122,8 +117,8 @@
 	</div>
 </div>
 <div class="pgg-intro">
-	<div class="pgg-intro-bg">
-		<div class="intro-wrapper">
+	<div class="pgg-intro-bg" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
+		<div class="intro-wrapper"  data-aos="fade-down" data-aos-duration="1000"  data-aos-delay="500">
 			<div class="intro-content">
 				<h2 class="color-w">About Pro Gamers Group</h2>
 				<p class="color-w mt-1">At Pro Gamers Group (PGG), we connect gaming brands with players worldwide. As a leading force in gaming hardware retail and distribution, we provide brands with direct access to the gaming community, ensuring products reach the right audience through our extensive network of online stores, marketplaces, and retail partners.
@@ -141,7 +136,7 @@
 	</div>
 	<div class="product-wrapper mt-2">
 		<!---HAVN--->
-		<div class="product-item">
+		<div class="product-item" data-aos="fade-right" data-aos-duration="1000" >
 			<div class="product-img-wrapper">
 				<div class="brand-logo-s"><img src="/images/pgg_computex_brandlogo_HAVN_s.png"></div>
 				<div class="product-img"><img src="/images/havn-BF360.jpg"></div>
@@ -163,7 +158,7 @@
 			</div>
 		</div>
 		<!---Ducky--->
-		<div class="product-item">
+		<div class="product-item" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
 			<div class="product-img-wrapper">
 				<div class="brand-logo-s brand-logo-dark"><img src="/images/pgg_computex_brandlogo_ducky_S.png"></div>
 				<div class="product-img"><img src="/images/ducky-Cushion98.jpg"></div>
@@ -186,7 +181,7 @@
 			</div>
 		</div>
 		<!---APNX--->
-		<div class="product-item">
+		<div class="product-item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="350">
 			<div class="product-img-wrapper">
 				<div class="brand-logo-s brand-logo-dark"><img src="/images/pgg_computex_brandlogo_apnx_s.png"></div>
 				<div class="product-img"><img src="/images/apnx-V2.jpg"></div>
@@ -209,7 +204,7 @@
 			</div>
 		</div>
 		<!---Aerocool--->
-		<div class="product-item">
+		<div class="product-item" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
 			<div class="product-img-wrapper">
 				<div class="brand-logo-s brand-logo-dark"><img src="/images/pgg_computex_brandlogo_aerocool_s.png"></div>
 				<div class="product-img"><img src="/images/aerocool-PREMIER_G1.jpg"></div>
@@ -232,7 +227,7 @@
 			</div>
 		</div>
 		<!---noblechairs--->
-		<div class="product-item">
+		<div class="product-item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="350">
 			<div class="product-img-wrapper">
 				<div class="brand-logo-s brand-logo-dark"><img src="/images/pgg_computex_brandlogo_noblechairs_s.png"></div>
 				<div class="product-img"><img src="/images/noblechairs_DAWN.jpg"></div>
@@ -254,7 +249,7 @@
 			</div>
 		</div>
 		<!---ThunderX3--->
-		<div class="product-item">
+		<div class="product-item" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
 			<div class="product-img-wrapper">
 				<div class="brand-logo-s brand-logo-dark"><img src="/images/pgg_computex_brandlogo_tx3_s.png"></div>
 				<div class="product-img"><img src="/images/tx3-FlexPro.jpg"></div>
@@ -277,7 +272,7 @@
 			</div>
 		</div>
 		<!---EGG--->
-		<div class="product-item">
+		<div class="product-item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="450">
 			<div class="product-img-wrapper">
 				<div class="brand-logo-s brand-logo-dark"><img src="/images/pgg_computex_brandlogo_egg_s.png"></div>
 				<div class="product-img"><img src="/images/egg_OP1-8k-v2.jpg"></div>
@@ -299,7 +294,7 @@
 			</div>
 		</div>
 		<!---streamplify--->
-		<div class="product-item">
+		<div class="product-item" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
 			<div class="product-img-wrapper">
 				<div class="brand-logo-s brand-logo-dark"><img src="/images/pgg_computex_brandlogo_streamplify_s.png"></div>
 				<div class="product-img"><img src="/images/streamplify_Cam-Plus.jpg"></div>
@@ -322,7 +317,7 @@
 			</div>
 		</div>
 		<!---Nitro--->
-		<div class="product-item">
+		<div class="product-item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="550">
 			<div class="product-img-wrapper">
 				<div class="brand-logo-s brand-logo-dark"><img src="/images/pgg_computex_brandlogo_nitro_s.png"></div>
 				<div class="product-img"><img src="/images/nitro_IMMERSION-Line.jpg"></div>
@@ -344,7 +339,7 @@
 			</div>
 		</div>
 		<!---EGG--->
-		<div class="product-item">
+		<div class="product-item" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
 			<div class="product-img-wrapper">
 				<div class="brand-logo-s brand-logo-dark"><img src="/images/pgg_computex_brandlogo_kolink_s.png"></div>
 				<div class="product-img"><img src="/images/kolink_TG-1.jpg"></div>
@@ -418,5 +413,11 @@
 	</div>
 </div>
 <div class="footer">© Pro Gamers Group 2025</div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+	/*--AOS--*/
+	AOS.init();
+
+</script>
 </body>
 </html>
