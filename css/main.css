@@ -150,7 +150,7 @@ p{
 .pgg-intro-bg{
 	background-image: url(../images/pgg_intro_bg.jpg);
 	background-size: cover;
-	background-position:top right;
+	background-position:center;
 	height: 100%;
 }
 .intro-wrapper{
