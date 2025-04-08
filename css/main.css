@@ -115,6 +115,8 @@ p{
 .expo-map-info span{
 	display: block;
 }
+
+
 /*--marquee --*/
 .marquee {
 	height: 40px;
@@ -124,7 +126,7 @@ p{
 	position: relative;
   }
   
-  .marquee div {
+.marquee div {
 	display: block;
 	width: 200%;
 	height: 40px;
@@ -144,34 +146,32 @@ p{
 	height: auto;
 }
 .pgg-intro{
-	height: 55vh;
+	/* height: 100vh; */
 	min-height: 768px;
 }
 .pgg-intro-bg{
-	background-image: url(../images/pgg_intro_bg.jpg);
-	background-size: cover;
-	background-position:center;
 	height: 100%;
 }
 .intro-wrapper{
-	width: 40%;
-	float: right;
-	position: relative;
+	width:100%;
+	/* float: right;
+	position: relative; */
 	height: 100%;
+	display: flex;
+	background-color:rgba(41, 51, 79, 0.8);
+	align-items: center;
 }
 
 .intro-content{
-	position: absolute;
-	width: 100%;
-	bottom: -3rem;
-	left: -5rem;
-	padding: 0 10rem;
-	background-color:rgba(41, 51, 79, 0.8);
+	height: 100%;
 	padding: 3rem;
 	color: #fff;
-	box-shadow:1rem 1.5rem #EF5A22;
-	backdrop-filter: blur(5px);
 }
+
+#pgg-video{
+	width: 70%;
+	height: 100%;
+  } 
 .btn{
 	font-size: 1.2rem;
 	padding: 0.5rem 1.5rem;
@@ -456,6 +456,9 @@ p{
 	.inner-wrapper{
 		width: 1280px;
 	}
+	#pgg-video{
+		width: 60%;
+	}
 }
 @media screen and (max-width: 1200px) {
 	.wrapper-hero,.hero-banner{
@@ -476,7 +479,14 @@ p{
 		width: 50%;
 	}
 	.intro-wrapper{
-		width: 60%;
+		display: block;
+	}
+	#pgg-video{
+		width: 100%;
+		margin: 2rem auto;
+	}
+	.intro-content{
+		padding: 3rem 5rem;
 	}
 	.inner-wrapper{
 		width: 100%;
@@ -518,9 +528,6 @@ p{
 		font-size: 3rem;
 	}
 	.expo-info{
-		width: 80%;
-	}
-	.intro-wrapper{
 		width: 80%;
 	}
 	.product-intro{
