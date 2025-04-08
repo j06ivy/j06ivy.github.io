@@ -213,6 +213,15 @@ p{
 .section-title .slash-w{
 	background-image: url(../images/slash-w.png);
 }
+
+.divider-l{
+	float: right;
+	display: inline-block;
+	width: 60%;
+	height: 1rem;
+	background-color: #EF5A22;
+	text-align: right;
+}
 /*--feature product--*/
 .product-img-wrapper{
 	position: relative;
