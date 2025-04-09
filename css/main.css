@@ -168,6 +168,7 @@ p{
 #pgg-video{
 	width: 70%;
 	height: 100%;
+	pointer-events: none;
 } 
 .btn{
 	font-size: 1.2rem;
